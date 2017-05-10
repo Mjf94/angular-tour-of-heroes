@@ -1,6 +1,6 @@
 
 
-#Angular Tutorial: Tour of Heroes with Ahead-Of-Time and Universal support
+# Angular Tutorial: Tour of Heroes with Ahead-Of-Time and Universal support
 
 This repo follows this [offcail instruction](https://angular.io/docs/ts/latest/guide/universal.html#!#serve-aot) on angular.io. It adds support of Ahead-Of-Time and Universal to improve the speed. 
 
@@ -9,7 +9,7 @@ Forked from [johnpapa's repo](https://github.com/johnpapa/angular-tour-of-heroes
 # Getting Started
 ## Get the Code
 ```
-git clone https://github.com/johnpapa/angular-tour-of-heroes.git toh
+git clone https://github.com/Mjf94/angular-tour-of-heroes.git toh
 cd toh
 npm i # or: yarn install
 ```
@@ -30,9 +30,7 @@ Runs the Angular AoT compiler, rollup, uglify for an optimized bundle, then laun
 npm run build:aot 
 # when finish, run
 npm run serve:aot
-
 ```
-
 
 ### Angular Universal  
 
@@ -42,7 +40,6 @@ Runs in Angular Universal mode
 npm run build:uni 
 # when finish, run
 npm run serve:uni
-
 ```
 
 
