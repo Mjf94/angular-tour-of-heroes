@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './in-memory-data.service';
+import { InMemoryDataService } from './service/in-memory-data.service';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HeroService } from './hero.service';
-import { DashboardComponent } from './dashboard.component';
-import { HeroesComponent } from './heroes.component';
+import { HeroService } from './service/hero.service';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { HeroesComponent } from './component/heroes/heroes.component';
 import { HeroDetailComponent } from './component/hero-detail/hero-detail.component';
 import { HeroSearchComponent } from './component/hero-search/hero-search.component';
 
