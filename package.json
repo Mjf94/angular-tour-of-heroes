@@ -9,9 +9,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:uni": "webpack --config webpack.config.uni.js",
+    "build:uni": "node_modules/.bin/ngc -p tsconfig-aot.json&&webpack --config webpack.config.uni.js",
     "serve:uni": "node src/dist/server.js",
-    "build:aot": "webpack --config webpack.config.aot.js",
+    "build:aot": "node_modules/.bin/ngc -p tsconfig-aot.json&&webpack --config webpack.config.aot.js",
     "serve:aot": "lite-server -c=bs-config.aot.js",
     "dev": "lite-server"
   },
