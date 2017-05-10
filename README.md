@@ -1,12 +1,17 @@
+
+
+#Angular Tutorial: Tour of Heroes with Ahead-Of-Time and Universal support
+
+This repo follows this [offcail instruction](https://angular.io/docs/ts/latest/guide/universal.html#!#serve-aot) on angular.io. It adds support of Ahead-Of-Time and Universal to improve the speed. 
+
+Forked from [johnpapa's repo](https://github.com/johnpapa/angular-tour-of-heroes.git) as I do not want to redo the tour-of-heroes tutorial.
+
 # Getting Started
-
-Super simple Angular app with 1 module and 2 routes 
-
 ## Get the Code
 ```
 git clone https://github.com/johnpapa/angular-tour-of-heroes.git toh
 cd toh
-npm i
+npm i # or: yarn install
 ```
 
 ### Just in Time (JiT) Compilation
@@ -22,23 +27,23 @@ npm start
 Runs the Angular AoT compiler, rollup, uglify for an optimized bundle, then launches the app
 
 ```
-npm run start-aot
-```
-
-### AoT + gzip 
-
-Runs AoT plus gzips and launches the app 
+npm run build:aot 
+# when finish, run
+npm run serve:aot
 
 ```
-gulp copy-aot-gzip
-npm run aot
-npm run rollup
-http-server
+
+
+### Angular Universal  
+
+Runs in Angular Universal mode
+
+```
+npm run build:uni 
+# when finish, run
+npm run serve:uni
+
 ```
 
-Notes:
-- Use your favorite server in place of `http-server`
-- This could be scripted, obviously
-- `lite-server` does not launch gzipped files by default.
 
 
