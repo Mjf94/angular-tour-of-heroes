@@ -9,8 +9,8 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/operator/switchMap';
-import {HeroSearchService} from "../../hero-search.service";
-import {Hero} from "../../hero";
+import {HeroSearchService} from '../../hero-search.service';
+import {Hero} from '../../hero';
 
 @Component({
   selector: 'my-hero-search',

@@ -16,7 +16,9 @@ import { HeroSearchComponent } from './component/hero-search/hero-search.compone
 
 @NgModule({
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({
+      appId: 'toh-universal'
+    }),
     FormsModule,
     AppRoutingModule,
     HttpModule,
